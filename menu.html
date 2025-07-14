@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - The Golden Spoon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header"><nav class="container"><a href="index.html" class="logo">The Golden Spoon</a><ul class="nav-links"><li><a href="index.html#home">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="index.html#gallery">Gallery</a></li><li><a href="index.html#contact">Contact</a></li><li class="nav-buttons"><a href="menu.html" class="btn btn-secondary">Order Now</a><a href="index.html#reservation" class="btn">Reserve Now</a></li></ul><div class="right-nav"><div class="theme-toggle"><i class="fas fa-moon"></i></div><div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div></nav></header>
+
+    <main>
+        <section id="menu" class="menu-page">
+            <div class="container">
+                <h1>Order Your Favorites</h1><p class="menu-intro">Select your desired dishes below to order for takeaway or dine-in.</p>
+                <div class="menu-filters"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="starters">Starters</button><button class="filter-btn" data-filter="main">Main Course</button><button class="filter-btn" data-filter="desserts">Desserts</button><button class="filter-btn" data-filter="drinks">Drinks</button></div>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="starters" data-price="12.00"><input type="checkbox" id="item-1" class="menu-checkbox"><label for="item-1" class="checkbox-label"></label><img src="unhealthy-fast-food-delivery-menu-featuring-assorted-burgers-cheeseburgers-nuggets-french-fries-soda-high-calorie-low-356045884.webp" alt="Bruschetta"><h3>Bruschetta</h3><p>Toasted bread with tomatoes, garlic, and basil.</p><span class="price">$12.00</span></div>
+                    <div class="menu-item" data-category="starters" data-price="15.00"><input type="checkbox" id="item-2" class="menu-checkbox"><label for="item-2" class="checkbox-label"></label><img src="summer-pasta-recipes.jpg" alt="Calamari"><h3>Fried Calamari</h3><p>Lightly battered calamari with marinara sauce.</p><span class="price">$15.00</span></div>
+                    <div class="menu-item" data-category="main" data-price="28.00"><input type="checkbox" id="item-3" class="menu-checkbox"><label for="item-3" class="checkbox-label"></label><img src="spicy_salmon_bite_rice_16300_16x9.jpg" alt="Grilled Salmon"><h3>Grilled Salmon</h3><p>Salmon with asparagus and lemon butter sauce.</p><span class="price">$28.00</span></div>
+                    <div class="menu-item" data-category="main" data-price="35.00"><input type="checkbox" id="item-4" class="menu-checkbox"><label for="item-4" class="checkbox-label"></label><img src="rice-dishes-1714219146_4b2d13389d18792a8c3d.webp" alt="Ribeye Steak"><h3>Ribeye Steak</h3><p>Aged ribeye served with mashed potatoes.</p><span class="price">$35.00</span></div>
+                    <div class="menu-item" data-category="main" data-price="22.00"><input type="checkbox" id="item-5" class="menu-checkbox"><label for="item-5" class="checkbox-label"></label><img src="Masala-Dosa-1024x538.jpg" alt="Pasta Carbonara"><h3>Pasta Carbonara</h3><p>Classic spaghetti with pancetta, egg, and parmesan.</p><span class="price">$22.00</span></div>
+                    <div class="menu-item" data-category="desserts" data-price="10.00"><input type="checkbox" id="item-6" class="menu-checkbox"><label for="item-6" class="checkbox-label"></label><img src="2-half-kacchi-scaled.webp" alt="Tiramisu"><h3>Tiramisu</h3><p>Classic Italian coffee-flavored dessert.</p><span class="price">$10.00</span></div>
+                    <div class="menu-item" data-category="desserts" data-price="11.00"><input type="checkbox" id="item-7" class="menu-checkbox"><label for="item-7" class="checkbox-label"></label><img src="images (3).jpeg" alt="Lava Cake"><h3>Chocolate Lava Cake</h3><p>Warm chocolate cake with a molten center.</p><span class="price">$11.00</span></div>
+                    <div class="menu-item" data-category="drinks" data-price="14.00"><input type="checkbox" id="item-8" class="menu-checkbox"><label for="item-8" class="checkbox-label"></label><img src="grilled-sea-fish-lemon-stone-slate-background-close-up-grilled-sea-fish-lemon-stone-slate-background-close-up-133652870.webp" alt="Espresso Martini"><h3>Espresso Martini</h3><p>A cold, coffee-flavored cocktail.</p><span class="price">$14.00</span></div>
+                </div>
+                <div class="order-summary"><h3 class="h3-heading">Your Order Summary</h3><p class="total-price">Total: <span id="total-amount">$0.00</span></p><button class="btn" id="place-order-btn">Checkout</button></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer><div class="container"><div class="footer-content"><div class="footer-about"><h3>The Golden Spoon</h3><p>Your destination for an unforgettable culinary journey.</p></div><div class="footer-links"><h3>Quick Links</h3><ul><li><a href="index.html#home">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="index.html#contact">Contact</a></li></ul></div><div class="footer-contact"><h3>Opening Hours</h3><p>Mon - Fri: 5pm - 11pm</p><p>Sat - Sun: 12pm - 11pm</p><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div></div></div><p class="footer-credit">© 2024 The Golden Spoon. All Rights Reserved.</p></div></footer>
+
+    <!-- INVOICE MODAL -->
+    <div class="modal-overlay" id="invoice-modal-overlay">
+        <div class="modal" id="invoice-modal">
+            <div class="modal-content">
+                <span class="close-modal" id="close-invoice-modal">×</span>
+                <div class="order-type-selection">
+                    <label><input type="radio" name="orderType" value="dine-in" id="dine-in-radio"> <span>Dine-In</span></label>
+                    <label><input type="radio" name="orderType" value="takeaway" id="takeaway-radio" checked> <span>Takeaway</span></label>
+                </div>
+                
+                <div id="takeaway-details">
+                    <div class="details-box">
+                         <h4>Contact Details</h4>
+                         <div class="form-group-modal"><input type="text" id="modal-name" placeholder="Your Name" required></div>
+                         <div class="form-group-modal"><input type="tel" id="modal-phone" placeholder="Mobile Number" required></div>
+                    </div>
+                </div>
+                
+                <div id="dine-in-details" class="hidden">
+                    <div class="details-box">
+                        <h4>Reservation Details</h4>
+                        <div class="form-group-modal"><input type="date" id="modal-date" required><input type="time" id="modal-time" required></div>
+                        <div class="form-group-modal"><input type="number" id="modal-guests" placeholder="Number of Guests" min="1" required></div>
+                    </div>
+                </div>
+                
+                <div id="invoice-items"></div><hr class="invoice-hr">
+                <div class="invoice-summary">
+                    <p>Subtotal: <span id="invoice-subtotal">$0.00</span></p><p>Tax (8%): <span id="invoice-tax">$0.00</span></p><p class="invoice-total">Total: <span id="invoice-total">$0.00</span></p>
+                </div>
+                <div class="modal-buttons"><button class="btn" id="confirm-order-btn">Confirm Order</button></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
